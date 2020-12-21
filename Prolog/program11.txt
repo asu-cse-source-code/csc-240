@@ -1,0 +1,318 @@
+% Austin Spencer
+% Program 11
+% query for the Early Spanish Rulers
+%
+%male( <name> ).
+%female( <name> ).
+%motherOf( <mother's name>, <child's name>).
+%fatherOf( <father's name>, <child's name>).
+%sonOf( <son's name>, <parent's name> ).
+%daughterOf( <daughter's name>, <parent's name> ).
+%siblingOf( <sibling's name>, <person's name> ).
+%auntOf ( <aunt's name>, <niece/nephew's name> ).
+%ancestorOf( <person's name>, <ancestor's name> ).
+%descendentOf( <descendent>, <person's name> ).
+%contemporaryOf( <person>, <contemporary ).
+%timesuccessorOf( <ruler>, <next ruler> ).
+
+
+male( sanchoIII ).
+male( garcia ).
+male( fernandoI ).
+male( sanchoII ).
+male( ramiroI ).
+male( sanchoII ).
+male( sanchoIV ).
+male( sancho ).
+male( alfonsoVI ).
+male( jimena ).
+male( pedroI ).
+male( alfonsoI ).
+male( ramiroII ).
+male( garciaRamirez ).
+male( sanchoVI ).
+male( sanchoVII ).
+male( raymond ).
+male( alfonso ).
+male( henry ).
+male( alfonsoHenriquez ).
+male( thibaut ).
+male( alfonsoII ).
+male( sanchoIII ).
+male( fernandoII ).
+male( teobakloI ).
+male( pedroII ).
+male( alfonso ).
+male( alfonsoVIII ).
+male( enriqueI ).
+male( ramiro ).
+male( alfonsoIX ).
+male( fernandoIII ).
+male( alfonsoX ).
+male( jaimeI ).
+male( pedroIII ).
+male( ramon ).
+
+female( sancha ).
+female( estefania ).
+female( ramon ).
+female( constance ).
+female( jimena ).
+female( petronilla ).
+female( urraca ).
+female( teresa ).
+female( eleanor ).
+female( blanca ).
+female( blanca ).
+female( urraca ).
+female( maria ).
+female( berenguela ).
+female( juanaI ).
+
+motherOf( sancha, sanchoII ).
+motherOf( sancha, garcia ).
+motherOf( estefania, sanchoIV ).
+motherOf( estefania, ramon ).
+motherOf( constance, urraca ).
+motherOf( ramon, ramiro ).
+motherOf( petronilla, alfonsoII ).
+motherOf( blanca, teobakloI ).
+motherOf( blanca, alfonsoVIII ).
+motherOf( eleanor, enrique ).
+motherOf( eleanor, blanca ).
+motherOf( eleanor, urraca ).
+motherOf( eleanor, berenguela ).
+motherOf( maria, jaimeI ).
+motherOf( berenguela, fernandoIII ).
+
+fatherOf( sanchoIII, fernandoI ).
+fatherOf( sanchoIII, garcia ).
+fatherOf( sanchoIII, ramiroI ).
+fatherOf( fernandoI, sanchoII ).
+fatherOf( fernandoI, sanchoII ).
+fatherOf( garcia, sanchoIV ).
+fatherOf( garcia, ramon ).
+fatherOf( sancho, pedroI ).
+fatherOf( sancho, alfonsoI ).
+fatherOf( sancho, ramiroII ).
+fatherOf( sanchoII, alfonsoVI ).
+fatherOf( alfonsoVI, urraca ).
+fatherOf( alfonsoVI, teresea ).
+fatherOf( ramiroII, petronilla ).
+fatherOf( alfonsoVII, sanchoIII ).
+fatherOf( alfonsoVII, fernandoII ).
+fatherOf( thibaut, teobakloI ).
+fatherOf( ramon, alfonsoII ).
+fatherOf( teobakloI, theobakloII ).
+fatherOf( teobakloI, enriqueI ).
+fatherOf( pedroII, jaimeI ).
+fatherOf( jaimeI, pedroIII ).
+fatherOf( alfonso, ramon ).
+fatherOf( sanchoIII, alfonsoVIII ).
+fatherOf( alfonsoVIII, enriqueI ).
+fatherOf( alfonsoVIII, blanca ).
+fatherOf( alfonsoVIII, urraca ).
+fatherOf( alfonsoVIII, berenguela ).
+fatherOf( alfonsoIX, fernandoIII ).
+fatherOf( fernandoIII, alfonsoX ).
+
+sonOf( fernandoI, sanchoIII ).
+sonOf( garcia, sanchoIII ).
+sonOf( ramiroI, sanchoIII ).
+sonOf( sanchoII, fernandoI ).
+sonOf( sanchoII, fernandoI ).
+sonOf( sanchoIV, garcia ).
+sonOf( ramon, garcia ).
+sonOf( pedroI, sancho ).
+sonOf( alfonsoI, sancho ).
+sonOf( ramiroII, sancho ).
+sonOf( alfonsoVI, sanchoII ).
+sonOf( sanchoIII, alfonsoVII ).
+sonOf( fernandoII, alfonsoVII ).
+sonOf( teobakloI, thibaut ).
+sonOf( alfonsoII, ramon ).
+sonOf( theobakloII, teobakloI ).
+sonOf( enriqueI, teobakloI ).
+sonOf( pedroIII, jaimeI ).
+sonOf( ramon, alfonso ).
+sonOf( alfonsoVIII, sanchoIII ).
+sonOf( enriqueI, alfonsoVIII ).
+sonOf( fernandoIII, alfonsoIX ).
+sonOf( alfonsoX, fernandoIII ).
+
+daughterOf( urraca, constance ).
+daughterOf( teobakloI, blanca ).
+daughterOf( alfonsoVIII, blanca ).
+daughterOf( enrique, eleanor ).
+daughterOf( blanca, eleanor ).
+daughterOf( urraca, eleanor ).
+daughterOf( berenguela, eleanor ).
+
+siblingOf( ramiroI, fernandoI ).
+siblinbOf( ramiroI, garcia ).
+siblingOf( garcia, fernandoI ).
+siblingOf( garcia, ramiroI ).
+siblingOf( fernandoI, ramiroI ).
+siblingOf( fernandoI, garcia ).
+siblingOf( ramiroII, alfonsoI ).
+siblingOf( ramiroII, pedroI ).
+siblingOf( alfonsoI, ramiroII ).
+siblingOf( alfonsoI, pedroI ).
+siblingOf( pedroI, alfonsoI ).
+siblingOf( pedroI, ramiroII ).
+siblingOf( sanchoVII, blanca ).
+siblingOf( blanca, sanchoVII ).
+siblingOf( enriqueI, blanca ).
+siblingOf( enriqueI, urraca ).
+siblingOf( enriqueI, berenguela ). 
+siblingOf( blanca, enriqueI ).
+siblingOf( blanca, urraca ).
+siblingOf( blanca, berenguela ).
+siblingOf( urraca, enriqueI ).
+siblingOf( urraca, blanca ).
+siblingOf( urraca, berenguela ).
+siblingOf( theobakloII, enriqueI ).
+siblingOf( enriqueI, theobakloII ). 
+
+auntOf( estefania, sancho ).
+auntOf( estefania, sanchoII ).
+auntOf( urraca, alfonso ).
+auntOf( urraca, fernandoIII ).
+auntOf( maria, ramon ).
+
+ancestorOf( sanchoIII, sanchoIV ).
+ancestorOf( sanchoIII, garcia ).
+ancestorOf( sanchoIII, pedroI ).
+ancestorOf( sanchoIII, alfonsoI ).
+ancestorOf( sanchoIII, ramiroII ).
+ancestorOf( sanchoIII, petronilla ).
+ancestorOf( sanchoIII, alfonsoII ).
+ancestorOf( sanchoIII, pedroII ).
+ancestorOf( sanchoIII, jaimeI ).
+ancestorOf( sanchoIII, pedroIII ).
+ancestorOf( sanchoIII, garcia ).
+ancestorOf( sanchoIII, sanchoVI ).
+ancestorOf( sanchoIII, sanchoVII ).
+ancestorOf( sanchoIII, alfonsoVI ).
+ancestorOf( sanchoIII, urraca ).
+ancestorOf( sanchoIII, alfonsoVII ).
+ancestorOf( sanchoIII, sanchoIII ).
+ancestorOf( sanchoIII, alfonso VIII ).
+ancestorOf( sanchoIII, enriqueI ).
+ancestorOf( sanchoIII, fernandoII ).
+ancestorOf( sanchoIII, alfonsoIX ).
+ancestorOf( sanchoIII, fernandoIII ).
+ancestorOf( sanchoIII, alfonsoX ).
+ancestorOf( garcia, sanchoIV ).
+ancestorOf( garcia, garciaRamirez ).
+ancestorOf( garcia, sanchoVI ).
+ancestorOf( garcia, sanchoVII ).
+ancestorOf( garcia, teobakloI ).
+ancestorOf( garcia, theobakloII ).
+ancestorOf( garcia, enriqueI ).
+ancestorOf( garcia, juanaI ).
+acestorOf( fernandoI, sanchoII ).
+acestorOf( fernandoI, alfonsoVI ).
+acestorOf( fernandoI, urraca ).
+acestorOf( fernandoI, alfonsoVII ).
+acestorOf( fernandoI, sanchoIII ).
+acestorOf( fernandoI, alfonso VIII ).
+acestorOf( fernandoI, enriqueI ).
+acestorOf( fernandoI, fernandoII ).
+acestorOf( fernandoI, fernandoIII ).
+acestorOf( fernandoI, alfonsoX ).
+acestorOf( ramiroI, sancho ).
+acestorOf( ramiroI, pedroI ).
+acestorOf( ramiroI, alfonsoI ).
+acestorOf( ramiroI, ramiroII ).
+acestorOf( ramiroI, petronilla ).
+acestorOf( ramiroI, alfonsoII ).
+acestorOf( ramiroI, pedroII ).
+acestorOf( ramiroI, jaimeI ).
+acestorOf( ramiroI, pedroIII ).
+
+descendentOf( alfonsoX, sanchoIII ).
+descendentOf( alfonsoX, fernandoIII ).
+descendentOf( alfonsoX, alfonsoIX ).
+descendentOf( alfonsoX, alfonsoVIII ).
+descendentOf( alfonsoX, sanchoIII ).
+descendentOf( alfonsoX, alfonsoVII ).
+descendentOf( alfonsoX, urraca ).
+descendentOf( alfonsoX, alfonsoVI ).
+descendentOf( alfonsoX, sanchoII ).
+descendentOf( alfonsoX, fernandoI ).
+descendentOf( pedroIII, jaimeI ).
+descendentOf( pedroIII, pedroII ).
+descendentOf( pedroIII, alfonsoII ).
+descendentOf( pedroIII, petronilla ).
+descendentOf( pedroIII, ramiroII ).
+descendentOf( pedroIII, sancho ).
+descendentOf( pedroIII, ramiroI ).
+descendentOf( juanaI, enriqueI ).
+descendentOf( juanaI, pedroII ).
+descendentOf( juanaI, alfonsoII ).
+descendentOf( juanaI, petronilla ).
+descendentOf( juanaI, ramiroII ).
+descendentOf( juanaI, sancho ).
+descendentOf( juanaI, ramiroI ).
+descendentOf( fernandoII, alfonsoVII ).
+descendentOf( fernandoII, berenguela ).
+descendentOf( fernandoII, urraca ).
+descendentOf( fernandoII, raymond ).
+descendentOf( fernandoII, constance ).
+descendentOf( fernandoII, alfonsoVI ).
+descendentOf( fernandoII, sanchoII ).
+descendentOf( fernandoII, garcia ).
+descendentOf( fernandoII, fernandoI ).
+descendentOf( fernandoII, sancha ).
+descendentOf( fernandoII, sanchoIII ).
+
+contemporaryOf( fernandoI, garcia ).
+contemporaryOf( fernandoI, estefania ).
+contemporaryOf( fernandoI, ramiroI ).
+contemporaryOf( fernandoI, sancha ).
+contemporaryOf( fernandoI, sanchoIV ).
+contemporaryOf( fernandoI, ramon ).
+contemporaryOf( fernandoI, ramiroII ).
+contemporaryOf( fernandoI, sanchoII ).
+contemporaryOf( sanchoIV, ramon ).
+contemporaryOf( sanchoIV, sanchoII ).
+contemporaryOf( sanchoIV, sancho ).
+contemporaryOf( urraca, alfonsoI ).
+contemporaryOf( urraca, raymond ).
+contemporaryOf( urraca, alfonsoI ).
+contemporaryOf( urraca, alfonsoI ).
+contemporaryOf( urraca, henry ).
+contemporaryOf( urraca, teresa ).
+contemporaryOf( sanchoIII, fernandoII ).
+contemporaryOf( sanchoIII, blanca ).
+contemporaryOf( sanchoIII, urraca ).
+contemporaryOf( sanchoIII, petronilla ).
+contemporaryOf( sanchoIII, ramon ).
+
+timesuccessorOf( sanchoIII, garcia ).
+timesuccessorOf( sanchoIII, fernandoI ).
+timesuccessorOf( sanchoIII, ramiroI ).
+timesuccessorOf( fernandoI, sanchoII ).
+timesuccessorOf( garcia, sanchoIV ).
+timesuccessorOf( ramiroI, sancho ).
+timesuccessorOf( sancho, pedroI ).
+timesuccessorOf( pedroI, alfonsoI ).
+timesuccessorOf( alfonsoI, ramiroII ).
+timesuccessorOf( ramiroII, petronilla ).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

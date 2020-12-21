@@ -1,0 +1,4 @@
+Austin Spencer
+Program 13 Description
+
+This program is a "Quest" to try to achieve a successful workout. The user will be tasked to choose between hanging out at the entrance of the gym, going to the weight room, going to the tanning room, or checking their phone. Depending on which option they choose to go with there are a few branching scenarios they could choose to pursue. Each one has an option to go back to the entrance. However, to actually get into the weight room the user must be motivated by going on their phone and playing their workout playlist from Spotify. If the user chooses to tan instead there is a negative consequence of not getting a good workout in. However, if the user turns on the music and goes to the weight room then there is a positive outcome of the successful workout. 
